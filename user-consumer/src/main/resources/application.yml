@@ -1,0 +1,18 @@
+server:
+  port: 7002
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-consumer
+dubbo:
+  application:
+    name: ${spring.application.name}
+    qos-port: 22223
+  registry:
+    address: nacos://192.168.7.11:8848?username=nacos&password=nacos
+#    host: 192.168.49.50
+    port: 20881
+    name: dubbo
+    token: true
+

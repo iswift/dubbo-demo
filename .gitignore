@@ -1,0 +1,7 @@
+/logs/
+*/logs/
+*/target/
+*.iml
+.gradle/
+.idea/
+*.class
